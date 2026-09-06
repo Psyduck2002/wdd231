@@ -1,0 +1,64 @@
+@media screen and (min-width: 700px) {
+
+    /* Hide hamburger completely */
+    #menu-button {
+        display: none;
+    }
+
+    /* Always show navigation on large screens */
+    nav,
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+    nav a {
+        text-align: center;
+        border-top: none;
+        padding: 0.8rem 1rem;
+    }
+
+    /* Main desktop layout */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    /* SIDE BY SIDE */
+    .about-section {
+        grid-column: 1 / 2;
+        margin-bottom: 0;
+    }
+
+    .photo-section {
+        grid-column: 2 / 3;
+        margin-bottom: 0;
+    }
+
+    .about-section .section-content,
+    .photo-section .section-content {
+        min-height: 250px;
+    }
+
+    /* Courses below both */
+    .courses-section {
+        grid-column: 1 / -1;
+    }
+
+    #course-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

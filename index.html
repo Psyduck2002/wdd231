@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 231 course home page">
+    <meta name="author" content="Kyle Roper">
+    <title>WDD 231 Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Site logo" width="50" height="50">
+            <span>Site Name</span>
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false"></button>
+        </div>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+            <div class="section-content">
+                <p>
+                    Hello! My name is Kyle, and I am currently studying Software Development.
+                    I enjoy learning about programming, web development, and building projects
+                    that allow me to be creative while solving problems.
+                </p>
+
+                <p>
+                    Outside of school, I enjoy playing video games, creating online content,
+                    playing piano, and spending time with friends and family. I especially enjoy
+                    learning new skills and finding ways to improve at the things I am working on.
+                </p>
+
+                <p>
+                    My goal is to continue developing my programming skills and eventually work
+                    in a career where I can create useful and interesting software.
+                </p>
+            </div>
+        </section>
+
+        <section class="photo-section">
+            <h2>Student Photo</h2>
+            <div class="section-content photo-container">
+                <div class="photo-placeholder">
+                    <img src="images/profile-picture.jpg" alt="Student photo">
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+                <button id="all" class="filter-button active-filter">All</button>
+                <button id="cse" class="filter-button">CSE</button>
+                <button id="wdd" class="filter-button">WDD</button>
+            </div>
+
+            <div id="course-cards"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kyle-roper-7710a43a7/" target="_blank" rel="noopener">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Psyduck2002/wdd231" target="_blank" rel="noopener">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a class="facebook-link" href="https://www.facebook.com/kyle.roper.739" target="_blank" rel="noopener">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> • Student Name • Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

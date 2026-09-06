@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #352055;
+    --primary-dark: #171126;
+    --secondary: #563a76;
+    --accent: #f8b93e;
+    --background: #f4f1f8;
+    --card: #ffffff;
+    --text: #24202a;
+    --completed: #d9c5ed;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: var(--card);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+}
+
+.header-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.header-content span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+/* ---------- HAMBURGER ---------- */
+
+#menu-button {
+    margin-left: auto;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#menu-button::before {
+    content: "☰";
+}
+
+#menu-button.open::before {
+    content: "✕";
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    display: none;
+    background-color: var(--primary-dark);
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-top: 1px solid var(--secondary);
+}
+
+nav a:hover {
+    background-color: var(--secondary);
+}
+
+nav a.active {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    width: min(95%, 1100px);
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0.5rem 0 1rem;
+    color: var(--primary-dark);
+    font-size: 2rem;
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    background-color: var(--card);
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 12%);
+}
+
+section h2 {
+    margin: 0;
+    padding: 0.65rem;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.section-content {
+    padding: 1rem;
+}
+
+.section-content p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ---------- PHOTO ---------- */
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-placeholder {
+    width: 75%;
+    max-width: 250px;
+}
+
+.photo-placeholder img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ---------- COURSE FILTER ---------- */
+
+.courses-section {
+    padding-bottom: 1rem;
+}
+
+.course-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.filter-button {
+    padding: 0.7rem;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    background-color: white;
+    color: var(--primary);
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #eee7f5;
+}
+
+.filter-button.active-filter {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* ---------- COURSES ---------- */
+
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.course-card {
+    background-color: #eeeeee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.55rem;
+}
+
+.course-card h3 {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.course-card.completed {
+    background-color: var(--completed);
+    border-color: var(--secondary);
+    color: var(--primary-dark);
+}
+
+#total-credits {
+    text-align: center;
+    margin: 0.9rem 1rem 0;
+    font-weight: 700;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-dark);
+    color: white;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+footer p {
+    margin: 0.35rem;
+    font-size: 0.9rem;
+}
+
+.facebook-link img {
+    width: 48px;
+    height: 48px;
+}
