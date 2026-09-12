@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore local businesses and organizations in the Sacramento Chamber of Commerce directory."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <meta property="og:title" content="Sacramento Chamber of Commerce Directory">
+    <meta
+        property="og:description"
+        content="Discover businesses and organizations serving the Sacramento community."
+    >
+    <meta
+        property="og:image"
+        content="https://Psyduck2002.github.io/wdd231/chamber/images/sacramento-chamber.webp"
+    >
+    <meta
+        property="og:url"
+        content="https://Psyduck2002.github.io/wdd231/chamber/directory.html"
+    >
+
+    <title>Sacramento Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+    <img src="images/sacramento-chamber.webp" alt="Sacramento Chamber of Commerce logo" class="logo">
+</a>
+
+            <div>
+                <p class="site-name">Sacramento</p>
+                <p class="site-subtitle">Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid" class="selected">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <section id="members" class="grid">
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Sacramento Chamber of Commerce</strong></p>
+            <p>Sacramento, California</p>
+            <p>info@sacramentochamber.org</p>
+            <p>(916) 555-1234</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                YouTube
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Kyle Roper</p>
+            <p>
+                &copy; <span id="currentyear"></span>
+                Sacramento Chamber of Commerce
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

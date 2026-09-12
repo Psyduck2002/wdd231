@@ -1,0 +1,232 @@
+:root {
+    --primary-color: #17324d;
+    --secondary-color: #c49a5a;
+    --background-color: #f4f4f4;
+    --card-color: #ffffff;
+    --text-color: #222222;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border-radius: 50%;
+}
+
+.site-name,
+.site-subtitle {
+    margin: 0;
+}
+
+.site-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.site-subtitle {
+    font-size: 0.9rem;
+}
+
+#menu {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+
+    background: none;
+    border: none;
+    color: white;
+
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 1.5rem auto;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.view-buttons button {
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    cursor: pointer;
+}
+
+.view-buttons button:hover,
+.view-buttons button.selected {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.grid .member-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1rem;
+}
+
+.member-info h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.member-info p {
+    margin: 0.5rem 0;
+}
+
+.membership {
+    color: #66501c;
+    font-weight: bold;
+}
+
+.member-info a {
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list .member-card {
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+}
+
+.list .member-card:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+.list .member-card img {
+    display: none;
+}
+
+.list .member-info {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

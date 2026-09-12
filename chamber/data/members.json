@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Capital City Cafe",
+            "address": "1200 J Street, Sacramento, CA",
+            "phone": "916-555-1001",
+            "website": "https://example.com",
+            "image": "capital-cafe.webp",
+            "membership": 2,
+            "description": "A locally owned cafe serving coffee, breakfast, and lunch in downtown Sacramento."
+        },
+        {
+            "name": "River City Tech",
+            "address": "815 K Street, Sacramento, CA",
+            "phone": "916-555-1002",
+            "website": "https://example.com",
+            "image": "river-city-tech.webp",
+            "membership": 3,
+            "description": "Technology support and web development services for Sacramento businesses."
+        },
+        {
+            "name": "Golden State Plumbing",
+            "address": "4300 Folsom Boulevard, Sacramento, CA",
+            "phone": "916-555-1003",
+            "website": "https://example.com",
+            "image": "golden-state-plumbing.webp",
+            "membership": 1,
+            "description": "Residential and commercial plumbing services throughout the Sacramento area."
+        },
+        {
+            "name": "Tower Books",
+            "address": "2500 Broadway, Sacramento, CA",
+            "phone": "916-555-1004",
+            "website": "https://example.com",
+            "image": "tower-books.webp",
+            "membership": 2,
+            "description": "An independent bookstore offering books, community events, and local authors."
+        },
+        {
+            "name": "Midtown Fitness",
+            "address": "1820 L Street, Sacramento, CA",
+            "phone": "916-555-1005",
+            "website": "https://example.com",
+            "image": "midtown-fitness.webp",
+            "membership": 1,
+            "description": "A community-focused fitness center offering strength training and group classes."
+        },
+        {
+            "name": "American River Design",
+            "address": "3100 Fair Oaks Boulevard, Sacramento, CA",
+            "phone": "916-555-1006",
+            "website": "https://example.com",
+            "image": "american-river-design.webp",
+            "membership": 3,
+            "description": "Graphic design, branding, and marketing services for local organizations."
+        },
+        {
+            "name": "Farm to Fork Market",
+            "address": "1601 Capitol Avenue, Sacramento, CA",
+            "phone": "916-555-1007",
+            "website": "https://example.com",
+            "image": "farm-to-fork-market.webp",
+            "membership": 3,
+            "description": "A Sacramento marketplace featuring produce and goods from regional farmers."
+        }
+    ]
+}
