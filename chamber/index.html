@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Welcome to the Sacramento Chamber of Commerce, supporting local businesses, events, and community growth."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <meta property="og:title" content="Sacramento Chamber of Commerce">
+    <meta
+        property="og:description"
+        content="Connect with Sacramento businesses, community events, and opportunities through the Sacramento Chamber of Commerce."
+    >
+    <meta
+        property="og:image"
+        content="https://Psyduck2002.github.io/wdd231/chamber/images/sacramento-hero.webp"
+    >
+    <meta
+        property="og:url"
+        content="https://Psyduck2002.github.io/wdd231/chamber/index.html"
+    >
+
+    <title>Sacramento Chamber of Commerce | Home</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img
+                    src="images/sacramento-chamber.webp"
+                    alt="Sacramento Chamber of Commerce logo"
+                    class="logo"
+                >
+            </a>
+
+            <div>
+                <p class="site-name">Sacramento</p>
+                <p class="site-subtitle">Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <img
+                src="images/sacramento-hero.webp"
+                alt="View of downtown Sacramento, California"
+            >
+
+            <div class="hero-content">
+                <h1>Sacramento Chamber of Commerce</h1>
+                <a href="join.html" class="join-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-info">
+            <section class="events">
+                <h2>Current Events</h2>
+
+                <div class="event">
+                    <h3>Business Networking Mixer</h3>
+                    <p><strong>September 24</strong></p>
+                    <p>
+                        Connect with local business owners and community
+                        leaders at our monthly networking event.
+                    </p>
+                </div>
+
+                <div class="event">
+                    <h3>Small Business Workshop</h3>
+                    <p><strong>September 30</strong></p>
+                    <p>
+                        Learn strategies for marketing, growth, and connecting
+                        with customers in the Sacramento area.
+                    </p>
+                </div>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <div class="current-weather">
+                    <p>
+                        <strong>Current Temperature:</strong>
+                        <span id="current-temp">Loading...</span>
+                    </p>
+
+                    <p>
+                        <strong>Conditions:</strong>
+                        <span id="weather-description">Loading...</span>
+                    </p>
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="forecast" class="forecast">
+                    <p>Loading forecast...</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlight-section">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlights" class="spotlights">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Sacramento Chamber of Commerce</strong></p>
+            <p>Sacramento, California</p>
+            <p>info@sacramentochamber.org</p>
+            <p>(916) 555-1234</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                YouTube
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Kyle Roper</p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Sacramento Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
