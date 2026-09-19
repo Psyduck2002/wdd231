@@ -171,6 +171,7 @@ h1 {
 .membership {
     color: #66501c;
     font-weight: bold;
+    margin-top: 1rem;
 }
 
 .member-info a {
@@ -257,23 +258,35 @@ footer p {
     bottom: 1rem;
     left: 1rem;
     right: 1rem;
-    background-color: rgba(0, 0, 0, 0.65);
+
+    background-color: rgba(0, 0, 0, 0.72);
     color: white;
-    padding: 1rem;
+
+    padding: 1.25rem;
     border-radius: 6px;
 }
 
 .hero-content h1 {
-    margin-top: 0;
+    color: white;
+    margin: 0 0 0.5rem;
+}
+
+.hero-content p {
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
 }
 
 .join-button {
     display: inline-block;
+
     background-color: #ffffff;
     color: #222222;
+
     padding: 0.75rem 1.25rem;
+
     text-decoration: none;
     font-weight: 700;
+
     border-radius: 5px;
 }
 
@@ -284,6 +297,7 @@ footer p {
 .home-info {
     display: grid;
     grid-template-columns: 1fr;
+
     gap: 1rem;
     padding: 1rem;
 }
@@ -325,7 +339,9 @@ footer p {
 
 .forecast-day {
     padding: 0.75rem;
+
     text-align: center;
+
     border: 1px solid #cccccc;
     border-radius: 6px;
 }
@@ -347,7 +363,9 @@ footer p {
 .spotlight-card {
     border: 1px solid #cccccc;
     border-radius: 8px;
+
     padding: 1rem;
+
     text-align: center;
 }
 
@@ -358,7 +376,9 @@ footer p {
 .spotlight-card img {
     width: 120px;
     height: 120px;
+
     object-fit: contain;
+
     margin: 0.5rem auto;
 }
 
@@ -368,8 +388,4 @@ footer p {
 
 .spotlight-card a {
     font-weight: 700;
-}
-
-.membership {
-    margin-top: 1rem;
 }
