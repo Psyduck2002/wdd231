@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Thank you for submitting your Sacramento Chamber of Commerce membership application."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <title>Sacramento Chamber of Commerce | Thank You</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img
+                    src="images/sacramento-chamber.webp"
+                    alt="Sacramento Chamber of Commerce logo"
+                    class="logo"
+                >
+            </a>
+
+            <div>
+                <p class="site-name">Sacramento</p>
+                <p class="site-subtitle">Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-card">
+            <h1>Thank You!</h1>
+
+            <p>
+                Thank you for applying to join the Sacramento Chamber of
+                Commerce. We appreciate your interest in supporting and
+                connecting with the Sacramento business community.
+            </p>
+
+            <h2>Your Application Information</h2>
+
+            <div id="application-details"></div>
+
+            <a href="index.html" class="join-button">
+                Return Home
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Sacramento Chamber of Commerce</strong></p>
+            <p>Sacramento, California</p>
+            <p>info@sacramentochamber.org</p>
+            <p>(916) 555-1234</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                YouTube
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Kyle Roper</p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Sacramento Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Apply to join the Sacramento Chamber of Commerce and explore available membership levels."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <meta property="og:title" content="Join the Sacramento Chamber of Commerce">
+    <meta
+        property="og:description"
+        content="Become a member of the Sacramento Chamber of Commerce and connect with local businesses and community leaders."
+    >
+    <meta
+        property="og:image"
+        content="https://Psyduck2002.github.io/wdd231/chamber/images/sacramento-chamber.webp"
+    >
+    <meta
+        property="og:url"
+        content="https://Psyduck2002.github.io/wdd231/chamber/join.html"
+    >
+
+    <title>Sacramento Chamber of Commerce | Join</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img
+                    src="images/sacramento-chamber.webp"
+                    alt="Sacramento Chamber of Commerce logo"
+                    class="logo"
+                >
+            </a>
+
+            <div>
+                <p class="site-name">Sacramento</p>
+                <p class="site-subtitle">Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-layout">
+            <section class="application-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+
+                    <label>
+                        First Name
+                        <input
+                            type="text"
+                            name="first"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="last"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="title"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select
+                            name="membership"
+                            title="Select a membership level"
+                            required
+                        >
+                            <option value="" disabled selected>
+                                Select a Membership Level
+                            </option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea
+                            name="description"
+                            title="Enter a description of your business or organization"
+                            rows="5"
+                        ></textarea>
+                    </label>
+
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp"
+                    >
+
+                    <button type="submit">
+                        Submit Membership Application
+                    </button>
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations.</p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="np-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>A great starting option for local businesses.</p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="bronze-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Additional promotion and event benefits.</p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="silver-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Our highest level of chamber membership.</p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="gold-modal"
+                        >
+                            Learn More
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="np-modal">
+        <h2>NP Membership</h2>
+
+        <p><strong>Cost:</strong> Free</p>
+
+        <ul>
+            <li>Access to chamber networking events</li>
+            <li>Business directory listing</li>
+            <li>Community resources</li>
+            <li>Nonprofit networking opportunities</li>
+        </ul>
+
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+        <h2>Bronze Membership</h2>
+
+        <p><strong>Cost:</strong> $100 per year</p>
+
+        <ul>
+            <li>All NP membership benefits</li>
+            <li>Business training workshops</li>
+            <li>Discounted chamber events</li>
+            <li>Expanded directory listing</li>
+        </ul>
+
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal">
+        <h2>Silver Membership</h2>
+
+        <p><strong>Cost:</strong> $250 per year</p>
+
+        <ul>
+            <li>All Bronze membership benefits</li>
+            <li>Advertising opportunities</li>
+            <li>Priority event registration</li>
+            <li>Eligibility for homepage spotlights</li>
+        </ul>
+
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal">
+        <h2>Gold Membership</h2>
+
+        <p><strong>Cost:</strong> $500 per year</p>
+
+        <ul>
+            <li>All Silver membership benefits</li>
+            <li>Premium homepage spotlight opportunities</li>
+            <li>Special event sponsorship opportunities</li>
+            <li>VIP networking events</li>
+            <li>Additional advertising discounts</li>
+        </ul>
+
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Sacramento Chamber of Commerce</strong></p>
+            <p>Sacramento, California</p>
+            <p>info@sacramentochamber.org</p>
+            <p>(916) 555-1234</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                YouTube
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                Facebook
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Kyle Roper</p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Sacramento Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
