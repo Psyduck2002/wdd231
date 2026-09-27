@@ -70,6 +70,15 @@
     .spotlights {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* =========================
+       JOIN PAGE
+    ========================= */
+
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -81,16 +90,3 @@
         min-height: 600px;
     }
 }
-
-    /* =========================
-       JOIN PAGE
-    ========================= */
-
-    .join-layout {
-        grid-template-columns: 2fr 1fr;
-        align-items: start;
-    }
-
-    .membership-cards {
-        grid-template-columns: 1fr;
-    }
