@@ -1,0 +1,183 @@
+
+[
+    {
+        "id": 1,
+        "name": "The Classic Pop",
+        "degrees": [1, 5, 6, 4],
+        "mood": "upbeat",
+        "genre": "Pop",
+        "description": "A familiar, bright loop that works for uplifting choruses.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 2,
+        "name": "Heartfelt Ballad",
+        "degrees": [6, 4, 1, 5],
+        "mood": "sad",
+        "genre": "Ballad",
+        "description": "Start on a minor chord for a reflective, emotional sound.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 3,
+        "name": "Timeless Fifties",
+        "degrees": [1, 6, 4, 5],
+        "mood": "romantic",
+        "genre": "Oldies",
+        "description": "A nostalgic progression heard in many classic love songs.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 4,
+        "name": "Four-Chord Anthem",
+        "degrees": [1, 4, 5, 4],
+        "mood": "upbeat",
+        "genre": "Rock",
+        "description": "Simple major chords make this perfect for a singalong.",
+        "tempo": "Fast"
+    },
+    {
+        "id": 5,
+        "name": "Gentle Reflection",
+        "degrees": [1, 3, 4, 4],
+        "mood": "calm",
+        "genre": "Ambient",
+        "description": "A smooth move through gentle harmonic colors.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 6,
+        "name": "Late-Night Thoughts",
+        "degrees": [6, 5, 4, 5],
+        "mood": "sad",
+        "genre": "Indie",
+        "description": "Descending harmony gives the loop a wistful quality.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 7,
+        "name": "Sunny Afternoon",
+        "degrees": [1, 4, 1, 5],
+        "mood": "upbeat",
+        "genre": "Folk",
+        "description": "An easy-going progression with a clear resolution.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 8,
+        "name": "Cinematic Rise",
+        "degrees": [6, 4, 5, 1],
+        "mood": "dramatic",
+        "genre": "Soundtrack",
+        "description": "Moves from introspection to a big, hopeful landing.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 9,
+        "name": "Quiet Morning",
+        "degrees": [4, 1, 2, 5],
+        "mood": "calm",
+        "genre": "Acoustic",
+        "description": "Light, flowing harmony for a peaceful atmosphere.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 10,
+        "name": "Emotional Journey",
+        "degrees": [6, 2, 4, 5],
+        "mood": "sad",
+        "genre": "Ballad",
+        "description": "Builds gentle tension before moving toward resolution.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 11,
+        "name": "Dreamy Evening",
+        "degrees": [1, 6, 2, 5],
+        "mood": "romantic",
+        "genre": "Jazz Pop",
+        "description": "A classic turnaround that feels warm and intimate.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 12,
+        "name": "Bold Entrance",
+        "degrees": [1, 5, 4, 5],
+        "mood": "dramatic",
+        "genre": "Rock",
+        "description": "Strong chord changes give this loop a confident feel.",
+        "tempo": "Fast"
+    },
+    {
+        "id": 13,
+        "name": "Hopeful Steps",
+        "degrees": [4, 5, 6, 1],
+        "mood": "upbeat",
+        "genre": "Worship",
+        "description": "An ascending-feeling progression that ends brightly.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 14,
+        "name": "Rainy Window",
+        "degrees": [2, 5, 1, 6],
+        "mood": "sad",
+        "genre": "Lo-fi",
+        "description": "A mellow cycle suited to soft piano voicings.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 15,
+        "name": "Warm Memories",
+        "degrees": [1, 4, 6, 5],
+        "mood": "romantic",
+        "genre": "Pop",
+        "description": "Familiar movement with a tender minor-chord twist.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 16,
+        "name": "Open Skies",
+        "degrees": [1, 2, 4, 1],
+        "mood": "calm",
+        "genre": "Ambient",
+        "description": "Spacious, relaxed chords for creative improvisation.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 17,
+        "name": "Final Showdown",
+        "degrees": [6, 4, 2, 5],
+        "mood": "dramatic",
+        "genre": "Soundtrack",
+        "description": "A tense loop that builds anticipation.",
+        "tempo": "Fast"
+    },
+    {
+        "id": 18,
+        "name": "First Dance",
+        "degrees": [1, 5, 6, 3],
+        "mood": "romantic",
+        "genre": "Ballad",
+        "description": "A gentle melody-friendly progression with a surprising turn.",
+        "tempo": "Slow"
+    },
+    {
+        "id": 19,
+        "name": "Bright Horizon",
+        "degrees": [4, 5, 1, 1],
+        "mood": "upbeat",
+        "genre": "Pop",
+        "description": "Strong cadential movement creates an uplifting finish.",
+        "tempo": "Medium"
+    },
+    {
+        "id": 20,
+        "name": "Storm Before Dawn",
+        "degrees": [2, 6, 4, 5],
+        "mood": "dramatic",
+        "genre": "Film Score",
+        "description": "Minor colors and forward momentum invite a dramatic melody.",
+        "tempo": "Medium"
+    }
+]

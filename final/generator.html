@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Generate piano chord progressions by key and mood, and suggest future progression ideas."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chord Progression Generator">
+    <meta
+        property="og:description"
+        content="Generate piano chord progressions by key and mood."
+    >
+    <meta
+        property="og:image"
+        content="https://psyduck2002.github.io/wdd231/final/images/piano.svg"
+    >
+    <meta
+        property="og:url"
+        content="https://psyduck2002.github.io/wdd231/final/generator.html"
+    >
+
+    <title>Generator | Piano Chord Progression Generator</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script type="module" src="scripts/generator.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Piano Chord Generator</a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Toggle navigation"
+            >☰</button>
+
+            <nav
+                class="site-nav"
+                id="primary-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="progressions.html">Progressions</a>
+                <a href="generator.html">Generator</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-intro">
+            <h1>Chord Progression Generator</h1>
+
+            <p>
+                Choose a musical key and a mood to discover
+                a progression you can play right away.
+            </p>
+        </section>
+
+        <section class="generator-panel" aria-labelledby="settings-title">
+            <h2 id="settings-title">Pick Your Sound</h2>
+
+            <form id="generator-form">
+                <div class="form-grid">
+                    <div>
+                        <label for="generate-key">Choose Key</label>
+
+                        <select
+                            name="key"
+                            id="generate-key"
+                            required
+                        ></select>
+                    </div>
+
+                    <div>
+                        <label for="generate-mood">Choose Mood</label>
+
+                        <select name="mood" id="generate-mood">
+                            <option value="all">Surprise Me</option>
+                            <option value="upbeat">Upbeat</option>
+                            <option value="sad">Sad</option>
+                            <option value="romantic">Romantic</option>
+                            <option value="calm">Calm</option>
+                            <option value="dramatic">Dramatic</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="button">
+                    Generate Progression
+                </button>
+            </form>
+
+            <p
+                class="help-text"
+                id="generator-message"
+                role="status"
+            >
+                Loading progressions...
+            </p>
+        </section>
+
+        <section
+            id="generated-result"
+            aria-labelledby="generated-title"
+            hidden
+        >
+            <p class="eyebrow" id="generated-type"></p>
+
+            <h2 id="generated-title"></h2>
+
+            <div
+                class="generated-chords"
+                id="generated-chords"
+            ></div>
+
+            <p id="generated-description"></p>
+
+            <p class="note">
+                Each chord shows its name, scale degree, and
+                three notes. Try four beats per chord.
+            </p>
+        </section>
+
+        <section
+            class="suggestion-panel"
+            aria-labelledby="suggestion-heading"
+        >
+            <h2 id="suggestion-heading">Suggest a Progression</h2>
+
+            <p>
+                Have a mood or song idea you want added?
+                Share it below. Your submission will be shown
+                on the confirmation page.
+            </p>
+
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="visitor-name">Your Name</label>
+
+                    <input
+                        id="visitor-name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                        minlength="2"
+                        maxlength="80"
+                    >
+                </div>
+
+                <div>
+                    <label for="visitor-email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="visitor-email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        maxlength="150"
+                    >
+                </div>
+
+                <div>
+                    <label for="visitor-mood">Favorite Mood</label>
+
+                    <select
+                        id="visitor-mood"
+                        name="mood"
+                        required
+                    >
+                        <option value="">Select a mood</option>
+                        <option>Upbeat</option>
+                        <option>Sad</option>
+                        <option>Romantic</option>
+                        <option>Calm</option>
+                        <option>Dramatic</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="visitor-idea">Your Progression Idea</label>
+
+                    <textarea
+                        id="visitor-idea"
+                        name="idea"
+                        rows="4"
+                        minlength="10"
+                        maxlength="600"
+                        placeholder="Describe the chord progression or feeling you're looking for..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="button" type="submit">
+                    Submit Suggestion
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Kyle Roper |
+                WDD 231 | Piano Chord Generator
+            </p>
+
+            <p>
+                <a href="attributions.html">Attributions</a>
+                &middot; Last modified:
+                <span id="last-modified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

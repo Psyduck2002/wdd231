@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover popular piano chord progressions and generate music ideas by key and mood."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Piano Chord Progression Generator">
+    <meta
+        property="og:description"
+        content="Discover popular piano chord progressions and generate music ideas by key and mood."
+    >
+    <meta
+        property="og:image"
+        content="https://psyduck2002.github.io/wdd231/final/images/piano.svg"
+    >
+    <meta
+        property="og:url"
+        content="https://psyduck2002.github.io/wdd231/final/index.html"
+    >
+
+    <title>Home | Piano Chord Progression Generator</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Piano Chord Generator</a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Toggle navigation"
+            >☰</button>
+
+            <nav
+                class="site-nav"
+                id="primary-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="progressions.html">Progressions</a>
+                <a href="generator.html">Generator</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Find Your Next Chord Progression</h1>
+
+            <p>
+                Discover inspiring piano chord progressions by key
+                and mood. Find new ideas for practice, songwriting,
+                and creativity.
+            </p>
+
+            <a class="button" href="generator.html">
+                Generate a Progression
+            </a>
+        </section>
+
+        <section class="section" aria-labelledby="popular-title">
+            <h2 id="popular-title">Popular Progressions</h2>
+
+            <p class="section-lead">
+                Start with three favorites, then explore the full
+                progression library.
+            </p>
+
+            <div
+                id="popular-cards"
+                class="cards"
+                aria-live="polite"
+            >
+                <p>Loading popular progressions...</p>
+            </div>
+
+            <p class="center-text">
+                <a class="button button-outline" href="progressions.html">
+                    Browse All Progressions
+                </a>
+            </p>
+        </section>
+
+        <section class="section" aria-labelledby="works-title">
+            <h2 id="works-title">How It Works</h2>
+
+            <ol class="steps">
+                <li>Choose Your Key</li>
+                <li>Choose Your Mood</li>
+                <li>Generate &amp; Play</li>
+            </ol>
+        </section>
+
+        <section class="section feature">
+            <div>
+                <h2>Turn Ideas Into Music</h2>
+
+                <p>
+                    A chord progression is a sequence of chords that
+                    gives a song its musical direction. Try playing
+                    each chord for four beats, or experiment with
+                    different rhythms.
+                </p>
+
+                <p>
+                    Use the Generator to explore new ideas or browse
+                    the Progressions page to learn the notes in each chord.
+                </p>
+            </div>
+
+            <img
+                src="images/piano.svg"
+                alt="Illustration of a piano keyboard with purple and white keys"
+                width="560"
+                height="260"
+                loading="lazy"
+            >
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Kyle Roper |
+                WDD 231 | Piano Chord Generator
+            </p>
+
+            <p>
+                <a href="attributions.html">Attributions</a>
+                &middot; Last modified:
+                <span id="last-modified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

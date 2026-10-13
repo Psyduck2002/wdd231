@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Attributions and credits for the Piano Chord Progression Generator website."
+    >
+    <meta name="author" content="Kyle Roper">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Attributions | Piano Chord Generator">
+    <meta
+        property="og:description"
+        content="Credits for resources used in the Piano Chord Progression Generator."
+    >
+    <meta
+        property="og:image"
+        content="https://psyduck2002.github.io/wdd231/final/images/piano.svg"
+    >
+    <meta
+        property="og:url"
+        content="https://psyduck2002.github.io/wdd231/final/attributions.html"
+    >
+
+    <title>Attributions | Piano Chord Progression Generator</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/site.css">
+    <script type="module" src="scripts/common.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Piano Chord Generator</a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Toggle navigation"
+            >☰</button>
+
+            <nav
+                class="site-nav"
+                id="primary-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="progressions.html">Progressions</a>
+                <a href="generator.html">Generator</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-intro">
+            <h1>Attributions</h1>
+
+            <p>
+                Credits for resources used in the
+                Piano Chord Progression Generator website.
+            </p>
+        </section>
+
+        <section class="generator-panel">
+            <h2>Fonts</h2>
+
+            <p>
+                This website uses
+                <a href="https://fonts.google.com/specimen/Montserrat">
+                    Montserrat
+                </a>
+                and
+                <a href="https://fonts.google.com/specimen/Roboto">
+                    Roboto
+                </a>,
+                provided by Google Fonts.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Kyle Roper |
+                WDD 231 | Piano Chord Generator
+            </p>
+
+            <p>
+                <a href="attributions.html">Attributions</a>
+                &middot; Last modified:
+                <span id="last-modified"></span>
+            </p>
+        </div>
+    </footer>
+
+    <script type="module">
+        import { initLayout } from "./scripts/common.js";
+        initLayout();
+    </script>
+</body>
+</html>
